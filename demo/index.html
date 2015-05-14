@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=0">
+  <title>MakeItStikcy - demo </title>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="MakeItSticky.js"></script>
+
+</head>
+<body>
+<style type="text/css" media="screen">
+ul{
+  display: block;
+  margin:0 auto;
+}
+li{
+  float: left;
+  margin-right: 25px;
+}
+.wrap{
+  width:80%;
+    margin: 0 auto;
+    margin-top: 25px;
+    height: 1500px;
+}
+img{
+  width: 40px;
+}
+</style>
+<div class="wrap">
+<ul>
+  <li>Test1</li>
+  <li>Test2</li>
+  <li>Test3</li>
+  <li>Test4</li>
+  <li>Test5</li>
+  <li>Test6</li>
+  <li>Test7</li>
+</ul>
+</div>
+<script  type="text/javascript">
+/*
+Build Menu: $obj.model ={
+                               'menuList':'ul class/id',
+                               'logo':{
+                                            'path':'path',
+                                            'isPresent':true|false,
+                                            'class':'LogoClass'
+                                            },
+                                'IconPath':'Path',
+                                'debug':true|false
+                              }
+
+
+
+ */
+  var settings = {
+    'menuList':'ul',
+    'logo':{
+      'path':'http://upload.wikimedia.org/wikipedia/en/3/35/Starbucks_Coffee_Logo.svg',
+      'isPresent':false,
+      'class':'menu-logo-mdfk'},
+      'IconPath':'http://iqcontent.com/blog/files/wp/2014/03/menu-alt-512.png',
+      'debug':true
+  }
+  $('ul').mis(settings);
+</script>
+</body>
+</html>
